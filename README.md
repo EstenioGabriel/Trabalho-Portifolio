@@ -1,71 +1,67 @@
 
 # 💼 Portfólio Pessoal
 
-🚀 [Portifólio](https://esteniogabriel.github.io/Portifolio/)
+🚀 [Portfólio online](https://esteniogabriel.github.io/Trabalho-Portifolio/)
 
 ## 🎓 Informações Acadêmicas
 
 **Universidade:** Universidade de Fortaleza (UNIFOR)  
 **Curso:** Análise e Desenvolvimento de Sistemas (ADS)  
-**Semestre:** 3º Semestre  
+**Semestre:** 4º Semestre  
 **Disciplina:** Desenvolvimento de Plataformas Web  
-**Professora:** Cynthia Moreira Maia  
+**Professora:** Cynthia Moreira Maia
 
 ---
 
 ## 📌 Descrição
 
-Este projeto consiste no desenvolvimento de uma página web de **portfólio pessoal**, criada utilizando **HTML5 e CSS3**.
+Portfólio pessoal em **página única** desenvolvido com **HTML5 e CSS3 puros** (sem frameworks, bibliotecas ou JavaScript), apresentando informações pessoais, skills e projetos em destaque com links para o GitHub.
 
-O objetivo da atividade é aplicar conceitos básicos de desenvolvimento web, incluindo a **estruturação de páginas com HTML** e **estilização com CSS**, simulando uma página profissional simples com informações pessoais, conhecimentos e projetos.
+Recursos de CSS moderno utilizados:
+
+- **Tema claro/escuro automático** — acompanha a preferência do sistema do visitante (`prefers-color-scheme`)
+- **Design responsivo** — layouts que se adaptam de desktop a celular (CSS Grid + media queries)
+- **Acessibilidade** — HTML semântico, navegação por teclado, `focus-visible`, contraste e suporte a `prefers-reduced-motion`
 
 ---
 
 ## 🛠 Tecnologias Utilizadas
 
-- 🌐 **HTML5** — Estrutura da página  
-- 🎨 **CSS3** — Estilização visual  
-
-Não foram utilizados frameworks ou bibliotecas externas, conforme solicitado na atividade.
+- 🌐 **HTML5** — Estrutura da página
+- 🎨 **CSS3** — Estilização visual, temas e responsividade
+- ✒️ **Google Fonts** — Tipografia (Sora + Inter)
 
 ---
 
 ## 📁 Estrutura do Projeto
 
-
-
-- **index.html** → arquivo responsável pela estrutura do conteúdo da página.  
-- **style.css** → arquivo responsável pela estilização visual da página.  
-- **imagens/** → pasta que contém as imagens utilizadas no site:
+- **index.html** → estrutura do conteúdo da página
+- **style.css** → estilização visual, temas claro/escuro e responsividade
+- **favicon.svg** → ícone da aba do navegador (monograma "EG")
+- **images/** → imagens utilizadas no site
   - 📸 Foto de perfil
-  - 🐙 Ícone ou imagem do GitHub
-  - 💼 Ícone ou imagem do LinkedIn
 
 ---
 
 ## 🧩 Estrutura da Página
 
-A página contém as seguintes seções:
+### 🧭 Topbar
+Barra de navegação fixa com monograma, links âncora e atalho para o GitHub.
 
-### 👤 Cabeçalho
-- Nome completo  
-- Subtítulo 
+### 👤 Hero
+Nome, curso, instituição, resumo profissional, foto e botões de ação.
 
 ### 📝 Sobre Mim
-Breve descrição pessoal.
+Descrição pessoal + cartão de fatos rápidos (curso, período, cidade, foco).
 
-### 💡 Conhecimentos
-Lista contendo alguns conhecimentos ou tecnologias.
+### 📊 Projetos em Destaque
+Cards de projetos com tecnologias, ano e links para o **repositório** (e demo quando disponível), além de um banner para ver todos os repositórios no GitHub.
 
-### 📊 Projetos
-Tabela contendo:
-- Nome do projeto  
-- Descrição  
-- Ano  
+### 💡 Skills
+Chips organizados por categoria: Linguagens, Web e Cloud & Infra.
 
 ### 📬 Contato
-Links para:
-- 🔗 Rede social (GitHub ou LinkedIn)
+Cartões de link para GitHub e LinkedIn.
 
 ### 📄 Rodapé
 Informação de direitos autorais.
@@ -74,6 +70,6 @@ Informação de direitos autorais.
 
 ## 👨‍💻 Autor
 
-Projeto desenvolvido por **Gabriel** como atividade acadêmica da disciplina **Desenvolvimento de Plataformas Web**.
+Projeto desenvolvido por **Estenio Gabriel** como atividade acadêmica da disciplina **Desenvolvimento de Plataformas Web**.
 
-© 2026 - Gabriel
+© 2026 - Estenio Gabriel

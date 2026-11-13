@@ -1,106 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+
+        <title>Estenio Gabriel · Portfólio</title>
+        <meta name="description" content="Portfólio de Estenio Gabriel — estudante de Análise e Desenvolvimento de Sistemas na UNIFOR, com foco em cloud, infraestrutura e desenvolvimento web.">
+        <meta name="theme-color" content="#f6f8fc" media="(prefers-color-scheme: light)">
+        <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+
+        <meta property="og:title" content="Estenio Gabriel · Portfólio">
+        <meta property="og:description" content="Estudante de Análise e Desenvolvimento de Sistemas (UNIFOR). Projetos com TypeScript, Java, Node.js, AWS e Linux.">
+        <meta property="og:type" content="website">
+
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 
-        <title>Estenio Gabriel</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
+    <body>
+        <header class="topbar">
+            <div class="container topbar-inner">
+                <a class="brand" href="#inicio">
+                    <span class="brand-mark" aria-hidden="true">EG</span>
+                    <span class="brand-name">Estenio Gabriel</span>
+                </a>
 
-<body>    
-    <div class="overlay">
-        <div class="modal">
-            <header>
-                <h1>Estenio Gabriel De Lima</h1>
-                <h2>Graduando Em Analise e Desenvolvimento de Sistemas na Universidade de Fortaleza</h2>
-            </header>
-        <hr>
-             <section class="aboutMe">
-                <img src="./images/header-img.jpg" alt="myPhoto">
-                <p>Estudante de Análise e Desenvolvimento de Sistemas, com experiência em Linux no dia a dia e 
-                    aplicação de conceitos de linha de comando para organização de sistemas. Trabalho com 
-                    versionamento por meio de Git e GitHub, mantendo projetos estruturados e documentados. 
-                    Já realizei deploy de aplicações em instâncias EC2 na AWS, compreendendo conceitos de 
-                    provisionamento e configuração de servidores. Atualmente, estou aprofundando meus 
-                    conhecimentos em automação, infraestrutura e boas práticas de desenvolvimento, com 
-                    foco na construção de sistemas organizados, escaláveis e confiáveis.</p>
+                <nav class="nav" aria-label="Navegação principal">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+
+                <a class="topbar-cta" href="https://github.com/EstenioGabriel" target="_blank" rel="noopener" aria-label="GitHub de Estenio Gabriel">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <!-- ===== HERO ===== -->
+            <section class="hero" id="inicio">
+                <div class="container hero-inner">
+                    <div class="hero-text">
+                        <p class="hero-eyebrow">Fortaleza — CE · Brasil</p>
+                        <h1>Estenio Gabriel</h1>
+                        <p class="hero-role">Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> · Universidade de Fortaleza (UNIFOR)</p>
+                        <p class="hero-pitch">"Todo especialista um dia foi um iniciante."</p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+                            <a class="btn btn-ghost" href="https://www.linkedin.com/in/esteniogabriel/" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-photo">
+                        <img src="./images/profile.jpg" alt="Foto de Estenio Gabriel" width="320" height="320">
+                    </div>
+                </div>
             </section>
-        <hr>
-            <section class="skills">
-                <h1>Skills</h1>
-                <h2>Tecnico</h2>
-                <ul>
-                    <li>Git & GitHub</li>
-                    <li>Amazon Web Services EC2</li>
-                    <li>Linux</li>
-                </ul>
 
-                <h2>Linguagens</h2>
-                <ul>
-                    <li>Java</li>
-                </ul>
+            <!-- ===== SOBRE ===== -->
+            <section class="section" id="sobre">
+                <div class="container">
+                    <header class="section-head">
+                        <p class="eyebrow">Apresentação</p>
+                        <h2>Sobre mim</h2>
+                    </header>
+
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p>Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> na UNIFOR, em Fortaleza. Programo em Java, JavaScript e TypeScript e já construí APIs, bancos de dados e aplicações publicadas na internet — boa parte em equipe com colegas do curso. Uso Git e GitHub no dia a dia, e todos os meus projetos ficam abertos no meu GitHub.</p>
+                        </div>
+
+                        <ul class="facts">
+                            <li>
+                                <span class="fact-label">Curso</span>
+                                Análise e Desenvolvimento de Sistemas · UNIFOR
+                            </li>
+                            <li>
+                                <span class="fact-label">Período</span>
+                                4º semestre
+                            </li>
+                            <li>
+                                <span class="fact-label">Base</span>
+                                Fortaleza — CE, Brasil
+                            </li>
+                            <li>
+                                <span class="fact-label">Foco</span>
+                                Backend · Cloud · Segurança
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
-        <hr>
-            <section class="projects">
-                <h1>Projetos</h1>
-                <table border="1">
-                    <tr>
-                        <th>Nome do projeto</th>
-                        <th>Descricao</th>
-                        <th>ano</th>
-                    </tr>
 
-                    <tr>
-                        <td>Gigabyte-Show</td>
-                        <td>O projeto The Gigabyte Show é um jogo de perguntas e respostas inspirado em quizzes e no famoso programa Show do Milhão.<br>
-                            O objetivo é testar o conhecimento do jogador em matemática, de forma divertida e interativa.</td>
-                        <td>2025.1</td>
-                            
-                    </tr>
+            <!-- ===== PROJETOS ===== -->
+            <section class="section section-band" id="projetos">
+                <div class="container">
+                    <header class="section-head">
+                        <p class="eyebrow">Trabalhos selecionados</p>
+                        <h2>Projetos em destaque</h2>
+                        <p class="lead">Uma amostra do que venho construindo. O código completo de todos os projetos está no meu GitHub.</p>
+                    </header>
 
-                    <tr>
-                        <td>consulta-placas-sudeste-brasil</td>
-                        <td>Nosso projeto consiste em um programa em JavaScript que utiliza a sequência de Fibonacci como base para identificar de qual estado é a placa de um veículo.</td>
-                        <td>2025.1</td>
-                            
-                    </tr>
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <div class="project-top">
+                                <span class="project-icon" aria-hidden="true">CF</span>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3><a href="https://github.com/EstenioGabriel/CarFyWebsite" target="_blank" rel="noopener">CarFy</a></h3>
+                            <p>Plataforma web que conecta motoristas a serviços automotivos em Fortaleza — mecânicas, lava-jatos, reboques e eletropostos — por meio de um mapa interativo com geolocalização em tempo real.</p>
+                            <ul class="tags" aria-label="Tecnologias utilizadas">
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Supabase</li>
+                                <li>Leaflet</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/EstenioGabriel/CarFyWebsite" target="_blank" rel="noopener">
+                                    Código
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+                                </a>
+                                <a href="https://carfyproject.vercel.app/" target="_blank" rel="noopener">
+                                    Demo online
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </article>
 
-                    <tr>
-                        <td>ProdutoCrud</td>
-                        <td>Este projeto consiste no desenvolvimento de uma aplicação Full Stack realizando um CRUD de produtos, com backend em API REST e banco de dados hospedado no Supabase, conforme o escopo definido pelo professor.
-                        O objetivo é demonstrar habilidades práticas de desenvolvimento web, deploy em nuvem, integração com banco de dados e melhorias no frontend.</td>
-                        <td>2025.2</td>
-                
-                    </tr>
-                </table>
-            </section>  
-        <hr>
-            <section class="contact">
-                <h1>Contatos</h1>
-                <ul>
-                    <a href="https://github.com/EstenioGabriel">
-                        <img src="./images/github.jpg">
-                    </a>
-                    <li><a href="https://github.com/EstenioGabriel">GitHub</a></li>
-                    <br>
-                    <a href="https://www.linkedin.com/in/esteniogabriel/">
-                        <img src="./images/linkedin.jpg" alt="linkedinPhoto">
-                    </a>
-                    <li><a href="https://www.linkedin.com/in/esteniogabriel/">Linkedin</a></li>
-                </ul>
+                        <article class="project-card">
+                            <div class="project-top">
+                                <span class="project-icon" aria-hidden="true">CR</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h3><a href="https://github.com/EstenioGabriel/Trabalho-CRUD" target="_blank" rel="noopener">CRUD de Produtos</a></h3>
+                            <p>Aplicação full stack de CRUD de produtos: API REST em Node.js/Express hospedada em máquina virtual na AWS, frontend em HTML/CSS/JS e banco de dados no Supabase.</p>
+                            <ul class="tags" aria-label="Tecnologias utilizadas">
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>AWS EC2</li>
+                                <li>Supabase</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/EstenioGabriel/Trabalho-CRUD" target="_blank" rel="noopener">
+                                    Código
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-top">
+                                <span class="project-icon" aria-hidden="true">GS</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h3><a href="https://github.com/EstenioGabriel/Trabalho-Gigabyte-Show" target="_blank" rel="noopener">The Gigabyte Show</a></h3>
+                            <p>Jogo de perguntas e respostas sobre matemática inspirado no Show do Milhão, com pontuação progressiva e dificuldade crescente a cada acerto.</p>
+                            <ul class="tags" aria-label="Tecnologias utilizadas">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/EstenioGabriel/Trabalho-Gigabyte-Show" target="_blank" rel="noopener">
+                                    Código
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+                                </a>
+                                <a href="https://esteniogabriel.github.io/Trabalho-Gigabyte-Show/" target="_blank" rel="noopener">
+                                    Jogar
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="github-banner">
+                        <div>
+                            <h3>Mais projetos no GitHub</h3>
+                            <p>Consulta de placas pelo Fibonacci, banco de dados de clínica veterinária, padrões de projeto em Java e muito mais.</p>
+                        </div>
+                        <a class="btn btn-banner" href="https://github.com/EstenioGabriel?tab=repositories" target="_blank" rel="noopener">
+                            Ver todos os repositórios
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+                        </a>
+                    </div>
+                </div>
             </section>
-            <hr>
-            <section class="footer">
-                <footer>
-                    <p>&copy; 2026 - Estenio Gabriel</p>
-                </footer>
+
+            <!-- ===== SKILLS ===== -->
+            <section class="section" id="skills">
+                <div class="container">
+                    <header class="section-head">
+                        <p class="eyebrow">Stack &amp; ferramentas</p>
+                        <h2>Skills</h2>
+                    </header>
+
+                    <div class="skills-grid">
+                        <div class="skill-group">
+                            <h3>Linguagens</h3>
+                            <ul>
+                                <li>Java</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>Backend</h3>
+                            <ul>
+                                <li>APIs REST</li>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>Web</h3>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>Cloud &amp; Infra</h3>
+                            <ul>
+                                <li>AWS EC2</li>
+                                <li>Linux</li>
+                                <li>Git &amp; GitHub</li>
+                                <li>Redes (VLANs)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
-        </div>
-    </div>
-</body>
+
+            <!-- ===== CONTATO ===== -->
+            <section class="section section-band" id="contato">
+                <div class="container">
+                    <header class="section-head">
+                        <p class="eyebrow">Vamos conversar</p>
+                        <h2>Contato</h2>
+                        <p class="lead">Quer trocar uma ideia sobre tecnologia, projetos ou oportunidades? Me encontre por aqui.</p>
+                    </header>
+
+                    <div class="contact-grid">
+                        <a class="contact-card" href="https://github.com/EstenioGabriel" target="_blank" rel="noopener">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                                </svg>
+                            </span>
+                            <span class="contact-info">
+                                <h3>GitHub</h3>
+                                <p>github.com/EstenioGabriel</p>
+                            </span>
+                            <span class="arrow" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+                            </span>
+                        </a>
+
+                        <a class="contact-card" href="https://www.linkedin.com/in/esteniogabriel/" target="_blank" rel="noopener">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </span>
+                            <span class="contact-info">
+                                <h3>LinkedIn</h3>
+                                <p>in/esteniogabriel</p>
+                            </span>
+                            <span class="arrow" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p class="footer-line">&copy; 2026 · <strong>Estenio Gabriel</strong></p>
+                <p class="footer-sub">Fortaleza — CE, Brasil</p>
+            </div>
+        </footer>
+    </body>
 </html>
