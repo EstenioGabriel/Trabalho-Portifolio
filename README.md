@@ -1,7 +1,7 @@
 
 # 💼 Portfólio Pessoal
 
-🚀 [Portfólio online](https://esteniogabriel.github.io/Trabalho-Portifolio/)
+🚀 [Portfólio online](https://esteniogabriel.com)
 
 ## 🎓 Informações Acadêmicas
 
