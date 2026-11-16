@@ -1,12 +1,12 @@
 /* ============================================================
    Estenio Gabriel — Portfólio
-   HTML5 + CSS3 puros · Tema claro/escuro automático (sem JS)
+   HTML5 + CSS3 puros · Tema claro
    ============================================================ */
 
 /* ---------- Tokens de design ---------- */
 
 :root {
-    color-scheme: light dark;
+    color-scheme: light;
 
     --bg: #f6f8fc;
     --band: #edf1f8;
@@ -31,27 +31,6 @@
 
     --font-body: "Inter", system-ui, -apple-system, sans-serif;
     --font-display: "Sora", var(--font-body);
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #0b1220;
-        --band: #0e1728;
-        --surface: #121b2e;
-        --surface-2: #18233c;
-        --text: #e7edfa;
-        --muted: #96a3ba;
-        --border: #24314d;
-
-        --accent: #5b8def;
-        --accent-strong: #7aa3f4;
-        --accent-contrast: #0b1220;
-        --accent-soft: rgba(91, 141, 239, 0.14);
-
-        --topbar-bg: rgba(11, 18, 32, 0.78);
-        --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.40);
-        --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.35), 0 20px 48px rgba(0, 0, 0, 0.40);
-    }
 }
 
 /* ---------- Base ---------- */

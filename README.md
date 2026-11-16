@@ -19,7 +19,7 @@ Portfólio pessoal em **página única** desenvolvido com **HTML5 e CSS3 puros**
 
 Recursos de CSS moderno utilizados:
 
-- **Tema claro/escuro automático** — acompanha a preferência do sistema do visitante (`prefers-color-scheme`)
+- **Tema claro profissional** — visual limpo e consistente em qualquer ambiente
 - **Design responsivo** — layouts que se adaptam de desktop a celular (CSS Grid + media queries)
 - **Acessibilidade** — HTML semântico, navegação por teclado, `focus-visible`, contraste e suporte a `prefers-reduced-motion`
 
